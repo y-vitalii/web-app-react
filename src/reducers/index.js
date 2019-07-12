@@ -5,7 +5,6 @@ const initialState = {
 };
 
 function rootReducer(state = initialState, action) {
-    debugger
     if (action.type === ADD_ARTICLE) {
         state.articles.push(action);
     }

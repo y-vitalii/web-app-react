@@ -1,15 +1,16 @@
 import React from 'react';
-import { Switch, Route } from 'react-router-dom'
+import {BrowserRouter as Router, Route} from 'react-router-dom'
+import {Provider} from 'react-redux'
+import App from '../components/app/App'
 import Cart from '../components/cart/Cart'
-import Content from '../components/content/Content'
 
-const Main = () => (
-    <main>
-        <Switch>
-            <Route path='/' component={Content }/>
+const Root = ({store}) => (
+    <Provider store={store}>
+        <Router>
+            <Route path='/' exact component={App} />
             <Route path='/cart' component={Cart} />
-        </Switch>
-    </main>
+        </Router>
+    </Provider>
 );
 
-export default Main
+export default Root

@@ -1,0 +1,134 @@
+.cart-content {
+    /*text-align: start;*/
+    background-color: #323232;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    position: relative;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.inline {
+    display: inline-block;
+}
+
+.total {
+    /*position: absolute;*/
+    /*right: 50px;*/
+}
+
+.col2 {
+    width: 50%;
+}
+
+.button {
+    background-color: transparent;
+    font-size: 29px;
+    font-weight: lighter;
+    color: white;
+    border: none;
+    padding: 7px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    /*margin: 30px 0px;*/
+}
+
+.button-accept {
+    background-color: green;
+    font-size: 29px;
+    font-weight: lighter;
+    color: white;
+    border: none;
+    padding: 7px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.cart-value {
+    border-top: 1px solid #a5a5a5;
+}
+
+.cart-value:last-child {
+    border-bottom: 1px solid #a5a5a5;
+}
+
+.info {
+    font-family: "Bitstream Vera Sans";
+    color: #ce7b00;
+    font-size: 27px;
+    font-weight: lighter;
+}
+
+.center {
+    width: 33.33333%;
+    /*float: left;*/
+}
+
+.left {
+    width: 33.33333%;
+    /*display:  inline-block;*/
+    /*position: absolute;*/
+    /*left: 100px;*/
+    /*top: 12px;*/
+}
+
+.right {
+    width: 33.33333%;
+    /*display:  inline-block;*/
+    /*position: absolute;*/
+    /*right: 150px;*/
+    /*top: 12px;*/
+}
+
+.image {
+    /*left: 100px;*/
+    /*position: absolute;*/
+    /*margin-right: 50px;*/
+}
+
+.top-content {
+    position: relative;
+    padding-top: 15px;
+    min-height: 100px;
+}
+
+.bottom-content {
+    position: relative;
+    margin-bottom: 5px;
+}
+
+.total {
+    background-color: #4c708c;
+    border-radius: 3px;
+}
+
+.text-style {
+    font-family: "Bitstream Vera Sans";
+    font-size: 20px;
+    color: #ce980a;
+}
+
+.confirm-content {
+    font-family: "Bitstream Vera Sans";
+    font-size: 20px;
+    color: #ce980a;
+    padding-top: 50px;
+}
+
+h3 {
+    color: #dcdcdc;
+    font-weight: lighter;
+}
+
+.slide-fade-enter-active {
+    transition: all .3s ease;
+}
+.slide-fade-leave-active {
+    transition: all .8s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+}
+.slide-fade-enter, .slide-fade-leave-to
+    /* .slide-fade-leave-active до версии 2.1.8 */ {
+    transform: translateX(10px);
+    opacity: 0;
+}

@@ -1,0 +1,44 @@
+#promo-content {
+    width: 100%;
+    height: 450px;
+    background-color: #BE6A00;
+    background-image: url(../../assets/header-bg.png);
+    background-position: 50% 0px;
+}
+
+.promo {
+    padding-top: 250px;
+}
+
+.promo :first-child {
+    font-weight: bold;
+    font-size: 31px;
+}
+
+.promo :last-child {
+    font-size: 24px;
+    font-weight: 300;
+}
+
+.promo-text {
+    color: white;
+    font-size: 30px;
+}
+
+.promo-img {
+    width: 209px;
+    height: auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 95px;
+    cursor: pointer;
+    margin: auto;
+    max-width: 105px;
+}
+
+.promo-img:hover {
+    transition-duration: 0.3s;
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}

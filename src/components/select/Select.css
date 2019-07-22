@@ -1,0 +1,42 @@
+#select-content {
+    padding-top: 30px;
+    text-align: center;
+    /*position: sticky;*/
+    /*top: 0;*/
+}
+
+.select {
+    margin: 0 auto;
+    padding: 0;
+    padding-bottom: 10px;
+    /*border-bottom: 1px #a5a5a5 solid;*/
+    width: 85%;
+}
+
+.select li {
+    cursor: pointer;
+    color: #f99700;
+    font-family: "Bitstream Vera Sans";
+    font-size: 25px;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-transform: uppercase;
+    display: inline-block;
+    /*width: 33.33333%;*/
+}
+
+.select li:hover {
+    color: #f09b00;
+    -webkit-transition: color ease-in-out 500ms;
+    -moz-transition: color ease-in-out 500ms;
+    -o-transition: color ease-in-out 500ms;
+    transition: color ease-in-out 500ms;
+}
+
+.selected {
+    color: #ceb800 !important;
+}
+
+.selected:before {
+    background: #ffffff !important;
+}

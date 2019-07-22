@@ -9,6 +9,7 @@ export default function fetchData() {
     //
 
 
+    debugger
     return new Promise(function (resolve) {
         setTimeout(() => {
             resolve();

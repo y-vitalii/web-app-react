@@ -1,14 +1,18 @@
-import {ADD_ARTICLE} from "../constants/action-types";
+import {ADD_ITEM} from "../constants/action-types";
 
 const initialState = {
     items: []
 };
 
 function cartReducer(state = initialState, action) {
-    if (action.type === ADD_ARTICLE) {
+    if (action.type === ADD_ITEM) {
+        const data = [].concat(state.items);
+
+        data.push(action.data);
+
         return {
             ...state,
-            items: action.data
+            items: data
         };
     }
 

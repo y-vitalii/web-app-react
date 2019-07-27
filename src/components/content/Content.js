@@ -49,7 +49,7 @@ class Content extends React.Component {
                                 return (
                                     <div className="swiper-slide" key={index}>
                                         <Product/>
-                                        <button>Buy</button>
+                                        <button onClick={this.props.addToCart.bind(this, value)}>Buy</button>
                                     </div>
                                 )
                             })}
@@ -70,4 +70,10 @@ function mapStateToProps(state) {
     }
 }
 
-export default connect(mapStateToProps)(Content);
+function mapDispatchToProps(dispatch) {
+    return {
+        addToCart: (val) => dispatch({type: 'ADD_ITEM', data: val})
+    }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(Content);
